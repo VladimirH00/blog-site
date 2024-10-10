@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -112,36 +111,59 @@
     </div>
 </header>
 
-<main class="flex-grow-1 d-flex flex-column justify-content-center">
+<main class="flex-grow-1 d-flex flex-column">
+    <h1>Личная информация</h1>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 offset-3">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.
+            <div class="col-3 d-flex">
+                <div class="col-lg-4 text-center mt-3">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                         preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                    </svg>
+                    <h2 class="fw-normal">
+                        <a href=""></a>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container-fluid">
+                    <div class="row mt-1">
+                        <div class="col-12">
+                            <p>Ваш логин: Admin</p>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <button type="submit" class="btn btn-primary">Войти</button>
-                            </div>
-                            <div class="col-6">
-                                <button type="submit" class="btn btn-primary">Забыли пароль</button>
-                            </div>
+                    <div class="row mt-1">
+                        <div class="col-12">
+                            <p>Ваш пароль: ********</p>
                         </div>
                     </div>
-                </form>
+                    <div class="row mt-1">
+                        <div class="col-12">
+                            <p>Ваше ФИО: Admin Admin Adminovich</p>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-12">
+                            <p>Дата рождения: 01.01.2001</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#" class="btn btn-primary">Сменить пароль</a>
+                        </div>
+                    </div>
+                    <div class="row-12 mt-3">
+                        <div class="col-12 ье">
+                            <a href="#" class="btn btn-primary">Редактировать профиль</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

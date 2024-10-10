@@ -114,62 +114,124 @@
     </div>
 </header>
 
-<main class="flex-grow-1 d-flex flex-column justify-content-center">
-
-    <div style="margin: 100px">
-        тут будет слайдер
-    </div>
-
-    <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"/>
-                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
+<main class="flex-grow-1 d-flex flex-column">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#" class="btn btn-primary disabled agree-all">Принять выбранных</a>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"/>
-                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
+                    <div class="col-6">
+                        <a href="#" class="btn btn-danger disabled disagree-all">Отклонить выбранных</a>
                     </div>
                 </div>
             </div>
+            <div class="offset-2 col-4">
+                <select class="form-select" aria-label="Пример выбора по умолчанию">
+                    <option selected>Откройте это меню выбора</option>
+                    <option value="1">Один</option>
+                    <option value="2">Два</option>
+                    <option value="3">Три</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-4">
+                Отображать на странице
+                <select class="form-select" aria-label="Пример выбора по умолчанию">
+                    <option selected>20</option>
+                    <option value="1">50</option>
+                    <option value="2">100</option>
+                    <option value="3">150</option>
+                </select>
+            </div>
+            <div class="offset-4 col-4 text-end">
+                <a href="#" class="btn btn-primary">Найти</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">
+                            <div class="form-check">
+                                <input class="form-check-input check-all" type="checkbox">
+                            </div>
+                        </th>
+                        <th scope="col">#</th>
+                        <th scope="col">login</th>
+                        <th scope="col">email</th>
+                        <th scope="col">ФИО</th>
+                        <th scope="col">статус</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>
+                            <div class="form-check">
+                                <input class="form-check-input checkbox-child" type="checkbox">
+                            </div>
+                        </th>
+                        <th scope="row">1</th>
+                        <td>admin</td>
+                        <td>admin@admin.ru</td>
+                        <td>Admin A.A</td>
+                        <td>В ожидании</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Принять</a>
+                            <a href="#" class="btn btn-danger">Отклонить</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="form-check">
+                                <input class="form-check-input checkbox-child" type="checkbox">
+                            </div>
+                        </th>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Участник</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="form-check">
+                                <input class="form-check-input checkbox-child" type="checkbox">
+                            </div>
+                        </th>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>Участник</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Пример навигации по страницам">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Предыдущая">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Следующая">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
-
 </main>
 
 <footer class="text-body-secondary py-5">
@@ -184,6 +246,50 @@
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/color-modes.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let checkAll = document.querySelector('.check-all');
+        let checkboxes = document.querySelectorAll('.checkbox-child');
+        let agreeAll = document.querySelector('.agree-all');
+        let disagreeAll = document.querySelector('.disagree-all');
+
+        checkAll.addEventListener('click', (event) => {
+            checkboxes.forEach((item) => {
+                item.checked = event.target.checked;
+                if (event.target.checked) {
+                    agreeAll.classList.remove('disabled')
+                    disagreeAll.classList.remove('disabled')
+                } else {
+                    agreeAll.classList.add('disabled')
+                    disagreeAll.classList.add('disabled')
+                }
+            })
+        })
+
+        checkboxes.forEach((item) => {
+            item.addEventListener('click', (evt) => {
+                let isChecked = evt.target.checked;
+                if (isChecked) {
+                    agreeAll.classList.remove('disabled');
+                    disagreeAll.classList.remove('disabled');
+                } else {
+                    let needHide = true;
+                    checkboxes.forEach((item) => {
+                        if (item.checked) {
+                            needHide = false;
+                        }
+                    });
+                    if (needHide) {
+                        agreeAll.classList.add('disabled')
+                        disagreeAll.classList.add('disabled')
+                        checkAll.checked = false;
+                    }
+                }
+            })
+        })
+    })
+</script>
 
 </body>
 </html>
